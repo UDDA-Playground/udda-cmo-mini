@@ -1,6 +1,13 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { 
+  DropdownMenu, 
+  DropdownMenuContent, 
+  DropdownMenuItem, 
+  DropdownMenuTrigger 
+} from '@/components/ui/dropdown-menu';
+import { FileText } from 'lucide-react';
 
 type NonHomeLayoutProps = {
   children: React.ReactNode;
@@ -25,19 +32,28 @@ const NonHomeLayout = ({ children }: NonHomeLayoutProps) => {
               className="h-8" 
             />
           </Link>
-          <nav className="flex space-x-6">
+          <nav className="flex space-x-6 items-center">
             <Link to="/contact" className="text-udda-primary hover:text-udda-primary/80 transition-colors">
               Contact
             </Link>
-            <Link to="/privacy-policy" className="text-udda-primary hover:text-udda-primary/80 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms-of-use" className="text-udda-primary hover:text-udda-primary/80 transition-colors">
-              Terms of Use
-            </Link>
-            <Link to="/cookie-policy" className="text-udda-primary hover:text-udda-primary/80 transition-colors">
-              Cookie Policy
-            </Link>
+            
+            {/* Legal Dropdown Menu */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-udda-primary hover:text-udda-primary/80 transition-colors flex items-center">
+                Legal <FileText className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/privacy-policy" className="w-full cursor-pointer">Privacy Policy</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/terms-of-use" className="w-full cursor-pointer">Terms of Use</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/cookie-policy" className="w-full cursor-pointer">Cookie Policy</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
         </div>
       </header>
