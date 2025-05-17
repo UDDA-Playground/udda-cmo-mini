@@ -56,7 +56,7 @@ const Index = () => {
             />
           </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
-            Just say the word—get expert marketing strategy now.
+            Get expert marketing strategy advice. Just explain what you need.
           </p>
           <Button
             id="mic-cta"
