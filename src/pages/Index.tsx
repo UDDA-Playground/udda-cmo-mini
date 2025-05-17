@@ -48,15 +48,16 @@ const Index = () => {
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-10">
             <img 
               src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" 
               alt="UDDA Logo" 
-              className="h-6 sm:h-8" 
+              className="h-8 sm:h-10" 
             />
           </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
-            Get expert marketing strategy advice. Just explain what you need.
+            Get expert marketing strategy advice.<br className="hidden md:block" /> 
+            Just explain what you need.
           </p>
           <Button
             id="mic-cta"
