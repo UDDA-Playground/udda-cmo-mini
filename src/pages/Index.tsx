@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Mic, Mail, Info, Copyright } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -57,8 +56,8 @@ const Index = () => {
             />
           </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
-            Did you ask UDDA?<br className="hidden md:block" />
-            Get expert marketing strategy advice for any situation.
+            Overwhelmed by marketing options? Not sure what actually works?<br className="hidden md:block" />
+            Get a focused action plan in a free voice chat.
           </p>
           <Button
             id="mic-cta"
