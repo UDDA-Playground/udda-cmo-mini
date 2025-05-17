@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Mic, Mail, Info, Copyright, Play, ArrowRight, Lightbulb, Users, Target } from 'lucide-react';
+import { Mic, Mail, Info, Copyright, Play, ArrowRight, Lightbulb, Users, Target, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import VoiceChat from '@/components/VoiceChat';
 import { Link } from 'react-router-dom';
