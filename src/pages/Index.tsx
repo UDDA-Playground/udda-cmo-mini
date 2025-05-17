@@ -55,8 +55,10 @@ const Index = () => {
               className="h-8 sm:h-10" 
             />
           </div>
-          <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
+          <p className="text-base sm:text-lg mb-4 text-udda-text max-w-xl mx-auto">
             Overwhelmed by marketing options? Not sure what actually works?<br className="hidden md:block" />
+          </p>
+          <p className="text-2xl sm:text-3xl font-medium mb-8 text-udda-text max-w-xl mx-auto">
             Get a focused action plan in a free voice chat.
           </p>
           <Button
