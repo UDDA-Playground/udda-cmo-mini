@@ -32,11 +32,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-slate-50 font-rubik">
-      {/* Background Elements */}
+    <div className="min-h-screen bg-gradient-to-b from-white to-slate-100 font-rubik relative overflow-hidden">
+      {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-udda-cta/5 blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-udda-primary/5 blur-3xl"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-udda-primary/10 blur-3xl"></div>
+        <div className="absolute bottom-40 right-20 w-96 h-96 rounded-full bg-udda-cta/15 blur-3xl"></div>
+        <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-udda-accent/10 blur-3xl"></div>
       </div>
 
       {/* Top Navigation */}
