@@ -99,15 +99,15 @@ const Index = () => {
             <Mail className="w-3 h-3 mr-1" />
             Contact
           </Link>
-          <Link to="#" className="hover:text-udda-primary flex items-center">
+          <Link to="/privacy-policy" className="hover:text-udda-primary flex items-center">
             <Info className="w-3 h-3 mr-1" />
             Privacy Policy
           </Link>
-          <Link to="#" className="hover:text-udda-primary flex items-center">
+          <Link to="/terms-of-use" className="hover:text-udda-primary flex items-center">
             <Info className="w-3 h-3 mr-1" />
             Terms of Use
           </Link>
-          <Link to="#" className="hover:text-udda-primary flex items-center">
+          <Link to="/cookie-policy" className="hover:text-udda-primary flex items-center">
             <Info className="w-3 h-3 mr-1" />
             Cookie Policy
           </Link>

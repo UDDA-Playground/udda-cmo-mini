@@ -9,47 +9,92 @@ const PrivacyPolicy = () => {
         <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-udda-text">Privacy Policy</h1>
         
         <div className="prose prose-slate max-w-none">
-          <p>Last updated: May 15, 2025</p>
+          <p>Last Updated: May 15, 2025</p>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Introduction</h2>
           <p>
-            UDDA TRANSLATION AB ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. 
-            This privacy policy informs you about how we collect, use, and process your personal information when you use our services 
-            or visit our website, and tells you about your privacy rights.
+            UDDA Translation AB ("UDDA," "we," "us," or "our") is committed to protecting your privacy in compliance with GDPR, 
+            Google and Microsoft API policies, and other applicable laws. This Privacy Policy explains how we collect, use, 
+            share, and protect your personal data when you use our Services, including the AI Voice Assistant, Gmail and 
+            Outlook integrations, website, and related applications.
           </p>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Information We Collect</h2>
-          <p>We may collect, use, store, and transfer different kinds of personal data about you, including:</p>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">1. Data We Collect</h2>
+          <p>1.1 Information You Provide:</p>
           <ul className="list-disc pl-6 my-4 space-y-2">
-            <li><strong>Identity Data:</strong> includes first name, last name, username, or similar identifier.</li>
-            <li><strong>Contact Data:</strong> includes email address, telephone number, and postal address.</li>
-            <li><strong>Technical Data:</strong> includes internet protocol (IP) address, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform.</li>
-            <li><strong>Usage Data:</strong> includes information about how you use our website and services.</li>
-            <li><strong>Marketing and Communications Data:</strong> includes your preferences in receiving marketing from us and our third parties and your communication preferences.</li>
+            <li>Account Data: Name, email, password.</li>
+            <li>User Content: Voice recordings, transcripts, messages, attachments.</li>
+            <li>Feedback: Ratings and comments on AI responses.</li>
           </ul>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">How We Use Your Data</h2>
-          <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
+          <p>1.2 Automatically Collected:</p>
           <ul className="list-disc pl-6 my-4 space-y-2">
-            <li>To provide and maintain our service.</li>
-            <li>To notify you about changes to our service.</li>
-            <li>To provide customer support.</li>
-            <li>To gather analysis or valuable information so that we can improve our service.</li>
-            <li>To monitor the usage of our service.</li>
-            <li>To detect, prevent and address technical issues.</li>
-            <li>To provide you with news, special offers and general information about our goods, services and events.</li>
+            <li>Device & Usage Data: IP address, device type, browser, interaction logs.</li>
           </ul>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Data Security</h2>
+          <p>1.3 Sensitive Data:</p>
+          <ul className="list-disc pl-6 my-4 space-y-2">
+            <li>Voice recordings may be considered biometric or sensitive under GDPR; we process these only with explicit consent.</li>
+          </ul>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">2. Legal Bases for Processing</h2>
+          <ul className="list-disc pl-6 my-4 space-y-2">
+            <li>Consent: For voice recordings, emotion/sentiment analysis, and Chrome/Outlook API access.</li>
+            <li>Contractual Necessity: To deliver the Services you request.</li>
+            <li>Legitimate Interests: To improve service security and functionality, after a balancing test.</li>
+            <li>Legal Obligations: To comply with laws.</li>
+          </ul>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">3. How We Use Data</h2>
+          <ul className="list-disc pl-6 my-4 space-y-2">
+            <li>Service Delivery: Process voice/text to generate AI responses.</li>
+            <li>Personalization: Tailor suggestions based on past interactions.</li>
+            <li>Security & Compliance: Protect against fraud and meet regulatory obligations.</li>
+            <li>Research & Improvement: Only for UDDA-specific service enhancements; we do not train vendor-wide AI models on your data without separate consent.</li>
+          </ul>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">4. Data Sharing</h2>
+          <ul className="list-disc pl-6 my-4 space-y-2">
+            <li>Processors: ElevenLabs, Google Gemini, AWS, Vercel, MongoDB Atlas—each bound by EU-standard DPAs.</li>
+            <li>Service Providers: Entities assisting us in operations (analytics, support).</li>
+            <li>Legal Authorities: When required by law.</li>
+          </ul>
+          <p>We do not sell your personal data for advertising.</p>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">5. International Transfers</h2>
+          <p>Data may be transferred outside the EEA (e.g., to the US) under:</p>
+          <ul className="list-disc pl-6 my-4 space-y-2">
+            <li>EU-US Data Privacy Framework certifications, and/or</li>
+            <li>Standard Contractual Clauses with supplementary measures, after conducting Transfer Impact Assessments.</li>
+          </ul>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">6. Data Retention & Deletion</h2>
+          <ul className="list-disc pl-6 my-4 space-y-2">
+            <li>Retention: Only as long as necessary for the purpose or as required by law.</li>
+            <li>Deletion: User-initiated deletion requests completed across all systems (including backups) within six months.</li>
+          </ul>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">7. Your Rights</h2>
           <p>
-            We have implemented appropriate technical and organizational security measures designed to protect the security of any personal 
-            information we process. However, please note that no electronic transmission or storage of information can be entirely secure, 
-            so we cannot guarantee absolute security.
+            Under GDPR, you have the right to access, rectify, erase, restrict processing, object, and portability of your data. 
+            To exercise these rights, contact hello@udda.ai or lodge a complaint with IMY: https://www.imy.se
           </p>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">8. Security Measures</h2>
           <p>
-            If you have any questions about this Privacy Policy, please contact us through our <a href="/contact" className="text-udda-primary hover:underline">contact form</a>.
+            We employ AES-256 encryption at rest, TLS 1.2+ in transit, role-based access controls, regular SOC-2/ISO audits, 
+            and secure data centers in Sweden and Germany.
+          </p>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">9. Children's Privacy</h2>
+          <p>Not for use by individuals under 18. If we learn we have collected data from a child, we will delete it promptly.</p>
+          
+          <h2 className="text-2xl font-semibold mt-8 mb-4">10. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy at https://udda.ai/legal/privacy. Significant changes will be communicated via email or in-app notices.
+          </p>
+          
+          <p className="mt-8">
+            <strong>Contact:</strong> hello@udda.ai | Johannes Plan 5, c/o Carlsson, 111 38 Stockholm, Sweden
           </p>
         </div>
       </div>
