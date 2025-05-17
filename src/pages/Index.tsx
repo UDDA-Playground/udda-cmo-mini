@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Microphone } from 'lucide-react';
+import { Mic } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import VoiceChat from '@/components/VoiceChat';
 
@@ -47,7 +46,7 @@ const Index = () => {
             onClick={openVoiceChat}
             className="bg-udda-primary hover:bg-udda-primary/90 text-white px-8 py-6 rounded-full text-lg mic-button-hover"
           >
-            <Microphone className="mr-2 h-5 w-5" />
+            <Mic className="mr-2 h-5 w-5" />
             Ask UDDA Now
           </Button>
           <p className="text-udda-lightGray text-sm mt-4">
@@ -56,7 +55,7 @@ const Index = () => {
         </div>
 
         <div className="absolute bottom-12 left-0 right-0 flex justify-center">
-          <Microphone className="h-8 w-8 text-udda-primary animate-pulse" />
+          <Mic className="h-8 w-8 text-udda-primary animate-pulse" />
         </div>
       </section>
 

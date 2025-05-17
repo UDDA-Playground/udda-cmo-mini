@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Microphone } from 'lucide-react';
+import { Mic } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 
@@ -68,7 +68,7 @@ const VoiceChat: React.FC<VoiceChatProps> = ({ onClose }) => {
                 : 'bg-udda-primary hover:bg-udda-primary/90'
             }`}
           >
-            <Microphone 
+            <Mic 
               className={`h-10 w-10 ${isListening ? 'animate-pulse' : ''}`}
             />
           </Button>
