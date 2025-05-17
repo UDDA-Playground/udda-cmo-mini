@@ -27,7 +27,7 @@ const NonHomeLayout = ({ children }: NonHomeLayoutProps) => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" 
+              src="/lovable-uploads/8b8e6c8e-8ca3-4b4f-a93e-60a91e574411.png" 
               alt="UDDA Logo" 
               className="h-8" 
             />
