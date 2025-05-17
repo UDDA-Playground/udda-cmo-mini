@@ -32,7 +32,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-rubik">
       {/* Top Navigation */}
       <nav className="absolute top-0 left-0 right-0 p-4 flex justify-end z-10">
         <a href="#" className="text-udda-primary hover:underline">Login</a>
@@ -43,9 +43,9 @@ const Index = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex justify-center mb-6">
             <img 
-              src="/lovable-uploads/0890f83c-444a-4612-9166-1348b9d59487.png" 
+              src="/lovable-uploads/33f0c7eb-e835-47fe-9d9c-77fb46200c29.png" 
               alt="UDDA Logo" 
-              className="h-16 sm:h-20" 
+              className="h-12 sm:h-16" 
             />
           </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
@@ -54,7 +54,7 @@ const Index = () => {
           <Button
             id="mic-cta"
             onClick={openVoiceChat}
-            className="bg-udda-primary hover:bg-udda-primary/90 text-white px-8 py-6 rounded-full text-lg mic-button-hover"
+            className="bg-udda-cta text-udda-ctaText hover:bg-udda-cta/90 px-8 py-6 rounded-xl text-lg mic-button-hover"
           >
             <Mic className="mr-2 h-5 w-5" />
             Ask UDDA Now

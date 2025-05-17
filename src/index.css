@@ -52,7 +52,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-rubik;
     scroll-behavior: smooth;
   }
   
@@ -68,6 +68,6 @@
   
   .mic-button-hover:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(92, 74, 230, 0.4);
+    box-shadow: 0 10px 25px -5px rgba(31, 222, 157, 0.4);
   }
 }

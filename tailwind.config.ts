@@ -19,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'rubik': ['Rubik', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -69,6 +72,8 @@ export default {
 					text: '#1A1A1A',
 					lightGray: '#777777',
 					muted: '#888888',
+					cta: '#1FDE9D',
+					ctaText: '#062C1F',
 				},
 			},
 			borderRadius: {

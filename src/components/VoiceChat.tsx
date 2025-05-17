@@ -46,7 +46,7 @@ const VoiceChat: React.FC<VoiceChatProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50 font-rubik">
       <div className="bg-white rounded-xl w-full max-w-md p-6 mx-4">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-xl font-bold text-udda-text">Ask UDDA</h3>
@@ -65,7 +65,7 @@ const VoiceChat: React.FC<VoiceChatProps> = ({ onClose }) => {
             className={`rounded-full h-24 w-24 flex items-center justify-center transition-all mic-button-hover ${
               isListening 
                 ? 'bg-red-500 hover:bg-red-600' 
-                : 'bg-udda-primary hover:bg-udda-primary/90'
+                : 'bg-udda-cta text-udda-ctaText hover:bg-udda-cta/90'
             }`}
           >
             <Mic 
