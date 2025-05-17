@@ -9,47 +9,42 @@ const CookiePolicy = () => {
         <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-udda-text">Cookie Policy</h1>
         
         <div className="prose prose-slate max-w-none">
-          <p>Last Updated: May 15, 2025</p>
+          <p>Last Updated: May 17, 2025</p>
           
           <p>
-            This Cookie Policy describes how UDDA uses cookies and similar technologies on our website and across the Services, 
-            including browser extensions and add-ins.
+            This Cookie Policy explains how UDDA uses cookies and similar technologies on our website and within the AI Voice Assistant portal.
           </p>
           
           <h2 className="text-2xl font-semibold mt-8 mb-4">1. What Are Cookies?</h2>
           <p>
-            Small text files stored on your device to recognize you and remember your preferences.
+            Small text files placed on your device to store preferences and track usage.
           </p>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">2. How We Use Cookies</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">2. Types of Cookies We Use</h2>
           <ul className="list-disc pl-6 my-4 space-y-2">
-            <li>Essential: Session management, user authentication.</li>
-            <li>Performance: Analytics to improve site speed and reliability.</li>
-            <li>Functional: Remember language and display settings.</li>
-            <li>Marketing: Deliver targeted ads and measure campaign effectiveness.</li>
+            <li>Essential: Required for basic functionality (e.g., session management).</li>
+            <li>Performance & Analytics: To measure and improve site performance.</li>
+            <li>Functional: To remember your preferences.</li>
           </ul>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">3. Third-Party Cookies</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">3. Your Choices</h2>
           <p>
-            We may allow third-party providers (e.g., Google Analytics, ad networks) to set cookies. 
-            Their practices are governed by their privacy policies.
+            You can disable non-essential cookies via your browser settings or through our consent banner. Disabling essential cookies may affect Service functionality.
           </p>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">4. Your Choices</h2>
-          <ul className="list-disc pl-6 my-4 space-y-2">
-            <li>Browser Settings: You can disable or delete cookies via your browser (see https://www.allaboutcookies.org).</li>
-            <li>Consent Banner: Opt out of non-essential cookies at any time.</li>
-          </ul>
-          
-          <h2 className="text-2xl font-semibold mt-8 mb-4">5. Retention</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">4. Retention</h2>
           <ul className="list-disc pl-6 my-4 space-y-2">
             <li>Session Cookies: Deleted when you close your browser.</li>
-            <li>Persistent Cookies: Remain until manually deleted or expire.</li>
+            <li>Persistent Cookies: Remain up to their individual expiry dates (typically 30–90 days).</li>
           </ul>
           
-          <h2 className="text-2xl font-semibold mt-8 mb-4">6. Changes</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">5. Changes</h2>
           <p>
-            We may update this policy at https://udda.ai/legal/cookie-policy. Changes take effect immediately upon posting.
+            We may update this Cookie Policy at https://udda.ai/legal/cookie-policy; changes take effect upon posting.
+          </p>
+          
+          <p className="mt-8">
+            If you have any questions or wish to exercise your data-subject rights, please contact hello@udda.ai.
           </p>
           
           <p className="mt-8">
