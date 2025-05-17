@@ -46,8 +46,8 @@ const VoiceChat: React.FC<VoiceChatProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50 font-rubik">
-      <div className="bg-white rounded-xl w-full max-w-md p-6 mx-4">
+    <div className="fixed inset-0 bg-black/40 backdrop-blur-md flex justify-center items-center z-50 font-rubik">
+      <div className="bg-white/95 rounded-xl w-full max-w-md p-6 mx-4 shadow-xl border border-gray-100">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-xl font-bold text-udda-text">Ask UDDA</h3>
           <Button 
@@ -78,7 +78,7 @@ const VoiceChat: React.FC<VoiceChatProps> = ({ onClose }) => {
         </div>
         
         {transcript && (
-          <div className="bg-gray-50 p-4 rounded-lg text-sm text-udda-text">
+          <div className="bg-slate-50/80 p-4 rounded-lg text-sm text-udda-text border border-slate-100">
             <p className="text-udda-lightGray mb-1">Your question:</p>
             <p>{transcript}</p>
           </div>

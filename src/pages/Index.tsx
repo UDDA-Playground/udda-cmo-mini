@@ -32,14 +32,20 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-rubik">
+    <div className="min-h-screen bg-gradient-to-b from-white to-slate-50 font-rubik">
+      {/* Background Elements */}
+      <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
+        <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-udda-cta/5 blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-udda-primary/5 blur-3xl"></div>
+      </div>
+
       {/* Top Navigation */}
       <nav className="absolute top-0 left-0 right-0 p-4 flex justify-end z-10">
         <a href="#" className="text-udda-primary hover:underline">Login</a>
       </nav>
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center relative px-4 sm:px-6">
+      <section className="h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 z-10">
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex justify-center mb-6">
             <img 
@@ -74,7 +80,7 @@ const Index = () => {
         id="more-info" 
         className={`py-8 transition-opacity duration-500 ${
           showScrollHint ? 'opacity-100' : 'opacity-0'
-        }`}
+        } relative z-10`}
       >
         <div className="text-center">
           <p className="text-udda-muted text-base">
