@@ -10,6 +10,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
+import NonHomeLayout from '@/components/NonHomeLayout';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -36,24 +37,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-slate-100 font-rubik relative">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-udda-primary/10 blur-3xl"></div>
-        <div className="absolute bottom-40 right-20 w-96 h-96 rounded-full bg-udda-cta/15 blur-3xl"></div>
-      </div>
-      
-      {/* Main Content */}
+    <NonHomeLayout>
       <div className="container max-w-6xl mx-auto px-4 py-12 relative z-10">
-        {/* Header */}
-        <div className="flex justify-center mb-8">
-          <img 
-            src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" 
-            alt="UDDA Logo" 
-            className="h-8 sm:h-10" 
-          />
-        </div>
-        
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-udda-text">Get in Touch</h1>
           <p className="text-lg text-udda-lightGray max-w-2xl mx-auto">
@@ -146,10 +131,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-xl mb-2">Our Office</h3>
                   <address className="not-italic text-udda-lightGray leading-relaxed">
-                    UDDA Marketing Strategies<br />
-                    Strandvägen 1<br />
-                    114 51 Stockholm<br />
-                    Sweden
+                    UDDA TRANSLATION AB<br />
+                    Stockholm, Sweden
                   </address>
                 </div>
               </div>
@@ -157,23 +140,13 @@ const Contact = () => {
             <div className="bg-udda-primary/5 rounded-lg p-6">
               <h3 className="font-medium text-lg mb-3 text-udda-primary">Our Hours</h3>
               <div className="space-y-2 text-udda-lightGray">
-                <p>Monday - Friday: 9:00 AM - 5:00 PM CET</p>
-                <p>Saturday - Sunday: Closed</p>
+                <p>On-demand when you need us.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="p-4 text-center mt-20">
-        <div className="text-udda-lightGray text-xs flex flex-wrap justify-center gap-4 items-center">
-          <span className="flex items-center">
-            © 2025 UDDA
-          </span>
-        </div>
-      </footer>
-    </div>
+    </NonHomeLayout>
   );
 };
 
