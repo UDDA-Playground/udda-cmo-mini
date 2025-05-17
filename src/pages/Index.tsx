@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Mic } from 'lucide-react';
+import { Mic, Mail, Info, Copyright } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import VoiceChat from '@/components/VoiceChat';
 
@@ -89,6 +89,32 @@ const Index = () => {
           </p>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="absolute bottom-0 left-0 right-0 p-4 flex justify-center items-center z-10">
+        <div className="text-udda-lightGray text-xs flex flex-wrap justify-center gap-4 items-center">
+          <a href="#" className="hover:text-udda-primary flex items-center">
+            <Mail className="w-3 h-3 mr-1" />
+            Contact
+          </a>
+          <a href="#" className="hover:text-udda-primary flex items-center">
+            <Info className="w-3 h-3 mr-1" />
+            Privacy Policy
+          </a>
+          <a href="#" className="hover:text-udda-primary flex items-center">
+            <Info className="w-3 h-3 mr-1" />
+            Terms of Use
+          </a>
+          <a href="#" className="hover:text-udda-primary flex items-center">
+            <Info className="w-3 h-3 mr-1" />
+            Cookie Policy
+          </a>
+          <span className="flex items-center">
+            <Copyright className="w-3 h-3 mr-1" />
+            2025 UDDA
+          </span>
+        </div>
+      </footer>
 
       {/* Voice Chat Modal */}
       {showVoiceChat && <VoiceChat onClose={closeVoiceChat} />}
