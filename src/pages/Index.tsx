@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Mic } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -32,12 +33,21 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Top Navigation */}
+      <nav className="absolute top-0 left-0 right-0 p-4 flex justify-end z-10">
+        <a href="#" className="text-udda-primary hover:underline">Login</a>
+      </nav>
+
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center relative px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 text-udda-text">
-            UDDA
-          </h1>
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/lovable-uploads/0890f83c-444a-4612-9166-1348b9d59487.png" 
+              alt="UDDA Logo" 
+              className="h-16 sm:h-20" 
+            />
+          </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
             Just say the word—get expert marketing strategy now.
           </p>
@@ -50,7 +60,7 @@ const Index = () => {
             Ask UDDA Now
           </Button>
           <p className="text-udda-lightGray text-sm mt-4">
-            Free. No sign-up needed.
+            Conversations are recorded &amp; transcribed per our <a href="https://udda.ai/legal/privacy" className="underline hover:text-udda-primary">Privacy Policy</a>.
           </p>
         </div>
 
