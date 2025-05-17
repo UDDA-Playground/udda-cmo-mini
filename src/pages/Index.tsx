@@ -50,9 +50,9 @@ const Index = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex justify-center mb-6">
             <img 
-              src="/lovable-uploads/33f0c7eb-e835-47fe-9d9c-77fb46200c29.png" 
+              src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" 
               alt="UDDA Logo" 
-              className="h-12 sm:h-16" 
+              className="h-6 sm:h-8" 
             />
           </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
