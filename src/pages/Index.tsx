@@ -57,8 +57,8 @@ const Index = () => {
             />
           </div>
           <p className="text-xl sm:text-2xl mb-8 text-udda-text max-w-xl mx-auto">
-            Get expert marketing strategy advice.<br className="hidden md:block" /> 
-            Just explain what you need.
+            Did you ask UDDA?<br className="hidden md:block" />
+            Get expert marketing strategy advice for any situation.
           </p>
           <Button
             id="mic-cta"
