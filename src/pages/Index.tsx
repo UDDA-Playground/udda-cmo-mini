@@ -53,7 +53,10 @@ const Index = () => {
 
       {/* Top Navigation */}
       <nav className="absolute top-0 left-0 right-0 p-4 flex justify-end z-10">
-        <Link to="/contact" className="text-udda-primary hover:underline">Login</Link>
+        <div className="flex items-center gap-4">
+          <Link to="/app" className="text-udda-primary hover:underline">App</Link>
+          <Link to="/contact" className="text-udda-primary hover:underline">Login</Link>
+        </div>
       </nav>
 
       {/* Hero Section */}
