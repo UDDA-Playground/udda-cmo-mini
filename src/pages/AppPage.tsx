@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -43,10 +42,6 @@ const AppPage = () => {
               Create Account
             </Button>
           </div>
-          
-          <p className="text-udda-muted text-base mt-4 mb-5">
-            Advice based on marketing science, expert input and online data collection.
-          </p>
         </div>
 
         {/* Features Grid */}
