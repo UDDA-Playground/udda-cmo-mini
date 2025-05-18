@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Mic, Mail, Info, Copyright, Play, ArrowRight, Lightbulb, Users, Target, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-
 const Index = () => {
   const [showVoiceChat, setShowVoiceChat] = useState(false);
   const [showScrollHint, setShowScrollHint] = useState(false);
@@ -26,23 +24,18 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
   const openVoiceChat = () => {
     setShowVoiceChat(true);
   };
-  
   const closeVoiceChat = () => {
     setShowVoiceChat(false);
   };
-  
   const openVideoDialog = () => {
     setShowVideoDialog(true);
   };
-
   const closeVideoDialog = () => {
     setShowVideoDialog(false);
   };
-
   return <div className="min-h-screen bg-gradient-to-b from-white to-slate-100 font-rubik relative overflow-hidden">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
@@ -68,9 +61,7 @@ const Index = () => {
           <p className="text-sm sm:text-base mb-2 text-udda-text max-w-xl mx-auto">
             Overwhelmed by marketing options? Not sure what actually works?<br className="hidden md:block" />
           </p>
-          <p className="text-xl sm:text-3xl md:text-4xl font-medium mb-8 text-udda-text max-w-xl mx-auto">
-            Get a focused action plan in a free voice chat.
-          </p>
+          <p className="text-xl sm:text-3xl md:text-4xl font-medium mb-8 text-udda-text max-w-xl mx-auto">Try our guided marketing service</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Button id="mic-cta" onClick={openVoiceChat} className="bg-udda-cta text-udda-ctaText hover:bg-udda-cta/90 px-8 py-6 rounded-xl text-lg mic-button-hover font-medium">
               <Mic className="mr-2 h-5 w-5" />
@@ -186,5 +177,4 @@ const Index = () => {
       </Dialog>
     </div>;
 };
-
 export default Index;
