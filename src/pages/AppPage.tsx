@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Mic, ArrowRight, User } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-
 const AppPage = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-slate-100 font-rubik relative overflow-hidden">
+  return <div className="min-h-screen bg-gradient-to-b from-white to-slate-100 font-rubik relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
         <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-udda-primary/10 blur-3xl"></div>
@@ -20,11 +17,7 @@ const AppPage = () => {
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" 
-              alt="UDDA Logo" 
-              className="h-8" 
-            />
+            <img src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" alt="UDDA Logo" className="h-8" />
           </Link>
           <nav className="flex space-x-4 items-center">
             <Link to="/" className="text-udda-primary hover:underline">Home</Link>
@@ -59,14 +52,14 @@ const AppPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           <Card className="bg-white/80 backdrop-blur-sm transition-all hover:shadow-lg">
             <CardContent className="pt-6 pb-6">
-              <h3 className="font-bold text-xl mb-3 text-udda-text">Customer Analysis</h3>
+              <h3 className="text-xl mb-3 text-udda-text font-semibold">Customer Analysis</h3>
               <p className="text-udda-muted">Understand your target audience through comprehensive data analysis and insights.</p>
             </CardContent>
           </Card>
           
           <Card className="bg-white/80 backdrop-blur-sm transition-all hover:shadow-lg">
             <CardContent className="pt-6 pb-6">
-              <h3 className="font-bold text-xl mb-3 text-udda-text">Content Strategy</h3>
+              <h3 className="text-xl mb-3 text-udda-text font-semibold">Content Strategy</h3>
               <p className="text-udda-muted">Create content that resonates with your audience and drives engagement.</p>
             </CardContent>
           </Card>
@@ -178,11 +171,7 @@ const AppPage = () => {
       <footer className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <img 
-              src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" 
-              alt="UDDA Logo" 
-              className="h-8" 
-            />
+            <img src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" alt="UDDA Logo" className="h-8" />
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-udda-lightGray">
             <Link to="/" className="hover:text-udda-primary">Home</Link>
@@ -195,8 +184,6 @@ const AppPage = () => {
           © 2025 UDDA. All rights reserved.
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default AppPage;
