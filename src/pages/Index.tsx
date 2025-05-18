@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Mic, Mail, Info, Copyright, Play, ArrowRight, Lightbulb, Users, Target, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -70,6 +71,9 @@ const Index = () => {
               See How It Works
             </Button>
           </div>
+          <p className="text-udda-muted text-base mt-4 mb-5">
+            Advice based on marketing science, expert input and online data collection.
+          </p>
           <p className="text-udda-lightGray text-sm mt-2">
             Conversations are recorded &amp; transcribed per our <Link to="#" className="underline hover:text-udda-primary">Privacy Policy</Link>.
           </p>
