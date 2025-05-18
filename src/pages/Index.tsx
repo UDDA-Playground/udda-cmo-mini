@@ -54,11 +54,13 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 z-10">
-        <div className="text-center max-w-3xl mx-auto py-0 my-0">
+        <div className="text-center max-w-3xl mx-auto">
           <div className="flex justify-center mb-10">
             <img src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" alt="UDDA Logo" className="h-8 sm:h-10" />
           </div>
-          
+          <p className="text-sm sm:text-base mb-2 text-udda-text max-w-xl mx-auto">
+            Overwhelmed by marketing options? Not sure what actually works?<br className="hidden md:block" />
+          </p>
           <p className="text-xl sm:text-3xl md:text-4xl font-medium mb-8 text-udda-text max-w-xl mx-auto">Create Winning Marketing with AI</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Button id="mic-cta" onClick={openVoiceChat} className="bg-udda-cta text-udda-ctaText hover:bg-udda-cta/90 px-8 py-6 rounded-xl text-lg mic-button-hover font-medium">
