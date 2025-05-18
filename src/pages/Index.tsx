@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Mic, Mail, Info, Copyright, Play, ArrowRight, Lightbulb, Users, Target, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -60,7 +59,7 @@ const Index = () => {
             <img src="/lovable-uploads/e1681008-d3d8-49f3-b325-85568a551641.png" alt="UDDA Logo" className="h-8 sm:h-10" />
           </div>
           
-          <p className="text-xl sm:text-3xl md:text-4xl font-medium mb-8 text-udda-text max-w-xl mx-auto">Create Winning Marketing with AI</p>
+          <p className="text-xl sm:text-3xl md:text-4xl font-medium mb-8 text-udda-text max-w-xl mx-auto">Achieve Marketing Success Today</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Button id="mic-cta" onClick={openVoiceChat} className="bg-udda-cta text-udda-ctaText hover:bg-udda-cta/90 px-8 py-6 rounded-xl text-lg mic-button-hover font-medium">
               <Mic className="mr-2 h-5 w-5" />
