@@ -30,12 +30,8 @@ const AppPage = () => {
       <main className="container mx-auto px-4 py-10 relative z-10">
         {/* Hero Section */}
         <div className="max-w-5xl mx-auto text-center mb-20">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-udda-text">
-            Your AI Marketing Assistant
-          </h1>
-          <p className="text-lg md:text-xl mb-8 text-udda-text max-w-3xl mx-auto">
-            UDDA helps you create effective marketing strategies tailored to your business needs
-          </p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-udda-text font-bold">Create Winning Marketing with AI</h1>
+          
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button id="mic-cta" className="bg-udda-cta text-udda-ctaText hover:bg-udda-cta/90 px-8 py-6 rounded-xl text-lg mic-button-hover font-medium">
               <Mic className="mr-2 h-5 w-5" />
